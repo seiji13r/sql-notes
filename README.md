@@ -1,7 +1,7 @@
-# My Personal SQL Notes <!-- omit in toc-->
-- [My Personal SQL Notes ](#my-personal-sql-notes)
+# My Personal SQL Notes <!-- omit in toc -->
 - [Overview](#overview)
 - [Resources](#resources)
+  - [Tools](#tools)
 - [PostgreSQL Installation Notes](#postgresql-installation-notes)
   - [Ubuntu Linux Virtual Machine Notes](#ubuntu-linux-virtual-machine-notes)
     - [Enable Remote Connections](#enable-remote-connections)
@@ -21,9 +21,14 @@ The Following Notes are created as I'm studing and following along the next cour
 [PostgreSQL Documentation]()
 [PostgreSQL DVD Rental Sample Database]()
 [PostgreSQL Tutorial]()
+[PostreSQL Sample Databases](https://community.embarcadero.com/article/articles-database/1076-top-3-sample-databases-for-postgresql)
 
 [MySQL Documentation]()
 [MySQL Sakila Sample Database "DVD Rental"]()
+
+## Tools
+
+[DBeaver](https://dbeaver.io/download/)
 
 # PostgreSQL Installation Notes
 
