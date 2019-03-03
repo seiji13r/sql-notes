@@ -1,4 +1,5 @@
 # SQL Topics
+## Section 1
 
 * SELECT
 * SELECT DISTINCT
@@ -14,6 +15,7 @@
 * WHERE ... LIKE
 * AGGREGATE FUNCTIONS [COUNT, MIN, MAX, AVG, SUM]
 * GROUP BY
+* HAVING
 
 # IMPORTANT NOTES
 
@@ -57,3 +59,16 @@ SELECT * FROM customer WHERE first_name LIKE '_en%';
 ```
 
 **ILIKE** Case insensitive
+
+## GROUP BY
+### Without AGG Function
+
+Without Aggregate Function, results in the same output as SELECT DISTINCT
+
+```sql
+SELECT column FROM table GROUP BY column;
+
+SELECT DISTINCT column FROM table;
+```
+
+
