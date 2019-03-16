@@ -8,6 +8,10 @@
     - [Create Super User as postgres USER](#create-super-user-as-postgres-user)
     - [Create USER and ASSOCIATED DATABASE](#create-user-and-associated-database)
     - [RESTORE backup or tar](#restore-backup-or-tar)
+- [MySQL Installation Notes](#mysql-installation-notes)
+    - [Edit `/etc/mysql/mysql.conf.d/mysqld.cnf`](#edit-etcmysqlmysqlconfdmysqldcnf)
+    - [Create A Remote User](#create-a-remote-user)
+    - [Restart MySQL Service](#restart-mysql-service)
 
 # Overview
 
@@ -128,4 +132,55 @@ pg_restore -h localhost -U [USER] -d [DATABASE] -v [FILE_PATH]
 # Example
 pg_restore -h localhost -U pgremote -d dvdrental -v "/home/ubuntu/dvdrental.tar"
 
+```
+
+# MySQL Installation Notes
+[Reference](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04)
+```bash
+sudo apt-get update
+sudo apt-get install mysql-server
+sudo mysql_secure_installation
+# Enable / Disable VALIDATE PASSWORD PLUGIN
+# SET root Password
+# Default all other options
+```
+
+### Edit `/etc/mysql/mysql.conf.d/mysqld.cnf`
+
+```console
+sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
+```
+
+```bash
+# Change line 43
+# From
+bind-address            = 127.0.0.1
+# To
+bind-address            = 0.0.0.0
+```
+
+### Create A Remote User
+```console
+sudo mysql -u root -p
+```
+
+```sql
+CREATE USER 'myroot'@'%' IDENTIFIED BY 'myroot';
+
+GRANT ALL PRIVILEGES ON *.* TO 'myroot'@'%' WITH GRANT OPTION;
+
+-- ALTER USER 'root'@'%' IDENTIFIED BY 'MyNewPass';
+
+```
+
+[Reference for Problem Access Denied](https://stackoverflow.com/questions/39281594/error-1698-28000-access-denied-for-user-rootlocalhost)
+[Reference to Create a Remote User](https://stackoverflow.com/questions/16287559/mysql-adding-user-for-remote-access)
+
+### Restart MySQL Service
+
+```bash
+# Check MySql status
+sudo service mysql status
+# restart MySql Service
+sudo service mysql restart
 ```
