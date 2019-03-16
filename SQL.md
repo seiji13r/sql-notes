@@ -24,11 +24,12 @@
 * INNER JOIN
 * LEFT JOIN, RIGHT JOIN
 * UNION
+* Timestamps and the EXTRACT function
 * Mathematical Functions
-* Timestamps and the extract function
 * String Functions and Operators
 * SubQuery
 * Self-Join
+
 
 
 # IMPORTANT NOTES
@@ -110,3 +111,17 @@ WHERE ...
 
 Left and Right Join help to find elements that are not present in other table.
 Example: Find which movies/films are not in the inventory.
+
+## Functions References
+
+[PostgreSQL Aggregate Functions](https://www.postgresql.org/docs/10/functions-aggregate.html)
+
+[PostgreSQL Date Time Functions](https://www.postgresql.org/docs/10/functions-datetime.html)
+
+[PostgreSQL Math Functions](https://www.postgresql.org/docs/10/functions-math.html)
+
+[PostgreSQL String Functions and Operators](https://www.postgresql.org/docs/10/functions-string.html)
+
+## Further Investigation SELF JOIN
+
+[Manager Employee Self Join Google Search](https://www.google.com/search?q=manager+employee+self+join&rlz=1C5CHFA_enMX808MX808&oq=manager+employee+sel&aqs=chrome.0.0j69i57j0l4.4150j0j7&sourceid=chrome&ie=UTF-8)
