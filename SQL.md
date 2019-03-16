@@ -1,4 +1,5 @@
-# SQL Topics
+# SQL Topics  <!-- omit in toc -->
+
 ## Section 1
 
 * SELECT
@@ -16,6 +17,13 @@
 * AGGREGATE FUNCTIONS [COUNT, MIN, MAX, AVG, SUM]
 * GROUP BY
 * HAVING
+
+## Section 2
+
+* AS STATEMENT
+* INNER JOIN
+* UNION
+
 
 # IMPORTANT NOTES
 
@@ -71,4 +79,23 @@ SELECT column FROM table GROUP BY column;
 SELECT DISTINCT column FROM table;
 ```
 
+## INNER JOIN
+### Syntax
 
+```sql
+SELECT A.pka, A.c1, A.pkb, B.c2
+FROM A
+INNER JOIN B ON A.pka = B.fkb
+```
+
+### Filtering and Ordering
+All filtering and ordering clauses should be used after the Join
+First filtering (WHERE) then ordering (ORDER BY)
+
+```sql
+SELECT A.pka, A.c1, A.pkb, B.c2
+FROM A
+INNER JOIN B ON A.pka = B.fkb
+ORDER BY ...
+WHERE ...
+```
