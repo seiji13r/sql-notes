@@ -1,4 +1,4 @@
-# SQL Exercises <!-- omit in toc -->
+# SQL Exercises Part 1 <!-- omit in toc -->
 
 - [Introduction](#introduction)
 - [Topics Section 1](#topics-section-1)
@@ -23,7 +23,7 @@ All the Following Exercises have been done using the sample database Sakila, Pak
 * WHERE ... BETWEEN
 * WHERE ... BETWEEN [LOW] AND [HIGH]
 * WHERE ... NOT BETWEEN [LOW] AND [HIGH]
-* WHERE ... IN
+* WHERE ... IN (a, b, c)
 * WHERE ... LIKE
 * AGGREGATE FUNCTIONS [COUNT, MIN, MAX, AVG, SUM]
 * GROUP BY
