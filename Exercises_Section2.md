@@ -15,7 +15,13 @@ All the Following Exercises have been done using the sample database Sakila, Pak
 
 * AS STATEMENT
 * INNER JOIN
+* LEFT JOIN, RIGHT JOIN
 * UNION
+* Mathematical Functions
+* Timestamps and the extract function
+* String Functions and Operators
+* SubQuery
+* Self-Join
 
   
 # Questions
@@ -28,6 +34,7 @@ All the Following Exercises have been done using the sample database Sakila, Pak
 6. From the previous Exercise get also de customer address and district with a second Join clause.
 7. Using Join get the staff name per payment.
 8. Get the Film titles and language of it.
+9. Find what Films are not in the Inventory
    
 ## Solutions
 
@@ -95,6 +102,13 @@ FROM film
 INNER JOIN language
 ON film.language_id = language.language_id;
 
+-- Find what Films are not in the Inventory
+SELECT film.film_id, film.title, inventory_id
+FROM film
+LEFT OUTER JOIN inventory
+ON inventory.film_id = film.film_id
+WHERE inventory.film_id IS NULL
+ORDER BY film.title ASC;
 ```
 
 # Assessment

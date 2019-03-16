@@ -22,7 +22,13 @@
 
 * AS STATEMENT
 * INNER JOIN
+* LEFT JOIN, RIGHT JOIN
 * UNION
+* Mathematical Functions
+* Timestamps and the extract function
+* String Functions and Operators
+* SubQuery
+* Self-Join
 
 
 # IMPORTANT NOTES
@@ -99,3 +105,8 @@ INNER JOIN B ON A.pka = B.fkb
 ORDER BY ...
 WHERE ...
 ```
+
+## LEFT JOIN
+
+Left and Right Join help to find elements that are not present in other table.
+Example: Find which movies/films are not in the inventory.
