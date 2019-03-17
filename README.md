@@ -22,9 +22,14 @@ The Following Notes are created as I'm studing and following along the next cour
 
 # Resources
 
-[PostgreSQL Documentation]()
-[PostgreSQL DVD Rental Sample Database]()
-[PostgreSQL Tutorial]()
+[PostgreSQL Documentation](https://www.postgresql.org/docs/)
+
+[PostgreSQL DVD Rental Sample Database](https://wiki.postgresql.org/wiki/Sample_Databases)
+
+[PostgreSQL Tutorial](http://www.postgresqltutorial.com/)
+
+[PostgreSQL Wiki](https://wiki.postgresql.org/wiki/Main_Page)
+
 [PostreSQL Sample Databases](https://community.embarcadero.com/article/articles-database/1076-top-3-sample-databases-for-postgresql)
 
 [MySQL Documentation]()
