@@ -12,7 +12,7 @@
 
 All the Following Exercises have been done using the sample database Sakila, Pakila or DVDRental
 
-# Topics Section 1
+# Topics Section 2
 
 * AS STATEMENT
 * INNER JOIN
