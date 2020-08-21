@@ -66,10 +66,10 @@ help
 ```
 \c [DATABASE]
 ## Connect to Database
+```
 
 ```sql
 SELECT DISTINCT grantee FROM information_schema.table_privileges;
- SELECT * FROM information_schema.table_privileges WHERE grantee = '[USERNAME]';
+SELECT * FROM information_schema.table_privileges WHERE grantee = '[USERNAME]';
+```
 
-```
-```
